@@ -2,7 +2,7 @@
   "name": "stolfam/utils-php",
   "license": "MIT",
   "description": "PHP 7.4 Classes for easier workflows.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "library",
   "require": {
     "php": ">= 7.4.0",
