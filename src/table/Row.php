@@ -24,10 +24,10 @@
         public function __construct(array $columns = [], bool $strict = true)
         {
             foreach ($columns as $column) {
-                if ($column instanceof Row || !$strict) {
+                if ($column instanceof IColumn || !$strict) {
                     $this->add($column);
                 } else {
-                    throw new \InvalidArgumentException("Column is not of type Row.");
+                    throw new \TypeError("Column is not of type IColumn.");
                 }
             }
         }
