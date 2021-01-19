@@ -13,6 +13,11 @@
      */
     trait IdentifiedByString
     {
+        use SmartObject;
+
+
+        protected string $id;
+
         /**
          * @return string
          */
@@ -20,6 +25,4 @@
         {
             return $this->id;
         }
-
-        use SmartObject;
     }
